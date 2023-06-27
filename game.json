@@ -8,6 +8,8 @@
   },
   "properties": {
     "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
     "folderProject": false,
     "orientation": "landscape",
     "packageName": "com.azapru.azurefinalist",
@@ -18,12 +20,12 @@
     "templateSlug": "",
     "useExternalSourceFiles": false,
     "version": "0.0.1",
-    "name": "AZURE FINALIST",
+    "name": "AzureFinalist",
     "description": "",
     "author": "Azapru",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "/home/aza/Documents/GDevelop projects/AzureFinalist/build/desktop",
+    "latestCompilationDirectory": "",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -269,6 +271,42 @@
         "userAdded": true
       },
       {
+        "alwaysLoaded": false,
+        "file": "assets/RemoveModeButton.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "RemoveModeButton",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/PlacingModeButton2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlacingModeButton2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/MoveModeButton.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "MoveModeButton",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/MoveModeButton2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "MoveModeButton2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
         "file": "assets/DungGeunMo.ttf",
         "kind": "font",
         "metadata": "",
@@ -277,21 +315,12 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/MoveModeButton.png",
+        "file": "assets/PlacingModeButton3.png",
         "kind": "image",
-        "metadata": "",
-        "name": "assets/MoveModeButton.png",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlacingModeButton3",
         "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/RemoveModeButton.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/RemoveModeButton.png",
-        "smoothed": false,
-        "userAdded": true
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -375,13 +404,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 80,
+          "height": 96,
           "layer": "GUI",
           "name": "ZoomInButton",
           "persistentUuid": "4de96c3a-f95a-46f9-a928-2ed17185d054",
-          "width": 80,
-          "x": 72,
-          "y": 648,
+          "width": 96,
+          "x": 80,
+          "y": 640,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -390,13 +419,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 80,
+          "height": 96,
           "layer": "GUI",
           "name": "ZoomOutButton",
           "persistentUuid": "51d871fa-d271-443d-ae61-9e2016cbc84e",
-          "width": 80,
-          "x": 168,
-          "y": 648,
+          "width": 96,
+          "x": 192,
+          "y": 640,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -425,13 +454,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 80,
+          "height": 96,
           "layer": "GUI",
           "name": "OffGridButton",
           "persistentUuid": "147a4d2e-fc13-4cd9-a861-ab4d5010ab90",
-          "width": 80,
-          "x": 224,
-          "y": 608,
+          "width": 96,
+          "x": 256,
+          "y": 592,
           "zOrder": 7,
           "numberProperties": [
             {
@@ -445,12 +474,12 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 80,
+          "height": 96,
           "layer": "GUI",
           "name": "PlacingMode",
           "persistentUuid": "2fba5c05-8ddf-4602-887a-cefd64e384c2",
-          "width": 80,
-          "x": 1072,
+          "width": 96,
+          "x": 1040,
           "y": 32,
           "zOrder": 8,
           "numberProperties": [],
@@ -460,12 +489,12 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 80,
+          "height": 96,
           "layer": "GUI",
           "name": "RemoveMode",
           "persistentUuid": "5b61bb17-cfd0-4ca1-b406-37063b85f371",
-          "width": 80,
-          "x": 1168,
+          "width": 96,
+          "x": 1152,
           "y": 32,
           "zOrder": 9,
           "numberProperties": [],
@@ -475,12 +504,12 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 80,
+          "height": 96,
           "layer": "GUI",
           "name": "MoveMode",
           "persistentUuid": "085977d1-76ac-4797-8218-cb2253dcf1a7",
-          "width": 80,
-          "x": 976,
+          "width": 96,
+          "x": 928,
           "y": 32,
           "zOrder": 10,
           "numberProperties": [],
@@ -495,8 +524,8 @@
           "name": "ModeText",
           "persistentUuid": "e0dcfa02-15f6-4824-9545-214b00f58574",
           "width": 0,
-          "x": 976,
-          "y": 124,
+          "x": 928,
+          "y": 144,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -1362,7 +1391,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets/RemoveModeButton.png",
+                      "image": "PlacingModeButton3",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1415,7 +1444,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets/MoveModeButton.png",
+                      "image": "MoveModeButton2",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1462,7 +1491,7 @@
           "string": "Mode: move",
           "font": "assets/DungGeunMo.ttf",
           "textAlignment": "left",
-          "characterSize": 24,
+          "characterSize": 40,
           "color": {
             "b": 255,
             "g": 255,
