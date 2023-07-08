@@ -3997,6 +3997,24 @@
                         "=",
                         "0"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "AjoutObjConcern"
+                      },
+                      "parameters": [
+                        "GameObjects",
+                        "GameObjects"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "GameObjects",
+                        ""
+                      ]
                     }
                   ],
                   "events": [
