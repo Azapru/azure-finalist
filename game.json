@@ -4124,24 +4124,17 @@
                                 "=",
                                 "Variable(child)"
                               ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
+                            },
                             {
                               "type": {
-                                "value": "VarScene"
+                                "value": "ModVarScene"
                               },
                               "parameters": [
                                 "QueueStep",
                                 "=",
-                                "5"
+                                "0"
                               ]
-                            }
-                          ],
-                          "actions": [
+                            },
                             {
                               "type": {
                                 "value": "CreateByName"
@@ -4160,19 +4153,9 @@
                                 "value": "SetAngle"
                               },
                               "parameters": [
-                                "GameObjects",
+                                "Block",
                                 "=",
                                 "Variable(queuedAngle)"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ModVarScene"
-                              },
-                              "parameters": [
-                                "QueueStep",
-                                "=",
-                                "0"
                               ]
                             }
                           ]
