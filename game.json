@@ -25,7 +25,7 @@
     "author": "Azapru",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "/home/aza/Documents/GDevelop projects/AzureFinalist/build/desktop",
+    "latestCompilationDirectory": "C:\\Users\\Aza\\Documents\\GDevelop projects\\AzureFinalist\\build\\web",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -330,6 +330,15 @@
         "name": "LoadButton",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NoTouchArea.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NoTouchArea.png\"}",
+        "name": "NoTouchArea",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -365,7 +374,7 @@
         "gridColor": 6184542,
         "gridAlpha": 0.4,
         "snap": true,
-        "zoomFactor": 0.7130377630690452,
+        "zoomFactor": 1.0269425874981153,
         "windowMask": false
       },
       "objectsGroups": [
@@ -623,6 +632,22 @@
           "x": 32,
           "y": 32,
           "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 48,
+          "layer": "Selector",
+          "name": "NoTouchArea",
+          "persistentUuid": "d4d55f24-3056-487a-8781-0c0e0618a876",
+          "width": 48,
+          "x": 648,
+          "y": 72,
+          "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1688,10 +1713,10 @@
           "effects": [],
           "behaviors": [
             {
-              "leftEdgeAnchor": 0,
               "name": "Anchor",
-              "rightEdgeAnchor": 2,
               "type": "AnchorBehavior::AnchorBehavior",
+              "leftEdgeAnchor": 0,
+              "rightEdgeAnchor": 2,
               "bottomEdgeAnchor": 0,
               "relativeToOriginalWindowSize": true,
               "topEdgeAnchor": 0,
@@ -1721,9 +1746,9 @@
           "effects": [],
           "behaviors": [
             {
-              "leftEdgeAnchor": 1,
               "name": "Anchor",
               "type": "AnchorBehavior::AnchorBehavior",
+              "leftEdgeAnchor": 1,
               "bottomEdgeAnchor": 0,
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 0,
@@ -1740,6 +1765,48 @@
             "g": 255,
             "r": 255
           }
+        },
+        {
+          "assetStoreId": "",
+          "name": "NoTouchArea",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NoTouchArea",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "NoTouchArea",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 32,
+                        "y": 32
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -1774,6 +1841,16 @@
                 "Selector",
                 "=",
                 "100"
+              ]
+            },
+            {
+              "type": {
+                "value": "Opacity"
+              },
+              "parameters": [
+                "NoTouchArea",
+                "=",
+                "0"
               ]
             }
           ]
@@ -3034,7 +3111,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Camera",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -3375,11 +3451,125 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Placing",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "SaveButton",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "ZoomInButton",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "LoadButton",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "ZoomOutButton",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "OffGridButton",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "PlacingMode",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "RemoveMode",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "MoveMode",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetCenter"
+                      },
+                      "parameters": [
+                        "NoTouchArea",
+                        "=",
+                        "CursorX(\"\", 0)",
+                        "=",
+                        "CursorY(\"\", 0)"
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -3622,6 +3812,18 @@
                     },
                     {
                       "type": {
+                        "inverted": true,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "NoTouchArea",
+                        "",
+                        "no",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "BuiltinCommonInstructions::Once"
                       },
                       "parameters": []
@@ -3647,12 +3849,11 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "VarSceneTxt"
+                        "value": "MouseButtonPressed"
                       },
                       "parameters": [
-                        "Mode",
-                        "=",
-                        "\"remove\""
+                        "",
+                        "Left"
                       ]
                     },
                     {
@@ -3663,6 +3864,28 @@
                         "GameObjects",
                         "",
                         "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarSceneTxt"
+                      },
+                      "parameters": [
+                        "Mode",
+                        "=",
+                        "\"remove\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "NoTouchArea",
+                        "",
+                        "no",
                         ""
                       ]
                     }
@@ -4572,6 +4795,22 @@
           "isLightingLayer": false,
           "isLocked": false,
           "name": "Selector",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "NoTouchArea layer",
           "renderingType": "",
           "visibility": true,
           "cameras": [],
