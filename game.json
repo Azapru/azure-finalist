@@ -339,6 +339,141 @@
         "name": "NoTouchArea",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Items/laser.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Items\\laser.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Items_laser.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Items\\laser",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Items_laser2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Items\\laser2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Items_laser3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Items\\laser3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Items_laser4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Items\\laser4",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Items/Spikey.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Items\\Spikey.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Items/Block.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Items\\Block.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Spikey.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Spikey",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Spikey2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Spikey2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Spikey3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Spikey3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Spikey4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Spikey4",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Panel.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Panel",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dim.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Dim",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Panel2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Panel2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Panel3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Panel3",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -374,7 +509,7 @@
         "gridColor": 6184542,
         "gridAlpha": 0.4,
         "snap": true,
-        "zoomFactor": 1.0269425874981153,
+        "zoomFactor": 1.026942587498117,
         "windowMask": false
       },
       "objectsGroups": [
@@ -647,6 +782,38 @@
           "width": 48,
           "x": 648,
           "y": 72,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 560,
+          "layer": "Object Selector",
+          "name": "ObjectSelectorPanel",
+          "persistentUuid": "127dec6d-af23-4085-b2e2-5a59e070cebb",
+          "width": 1120,
+          "x": 80,
+          "y": 80,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 720,
+          "layer": "Object Selector",
+          "name": "Dim",
+          "persistentUuid": "a92b56d6-37f7-4340-adff-4767e910b922",
+          "width": 1280,
+          "x": 0,
+          "y": 0,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -1807,6 +1974,273 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "LaserChain",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "assets\\Items\\laser",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Items\\laser",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Items\\laser2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Items\\laser3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Items\\laser4",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Spikey",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Spikey",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Spikey",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Spikey2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Spikey3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Spikey4",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bottomMargin": 12,
+          "height": 64,
+          "leftMargin": 12,
+          "name": "ObjectSelectorPanel",
+          "rightMargin": 12,
+          "tags": "",
+          "texture": "Panel",
+          "tiled": true,
+          "topMargin": 12,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 64,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 2,
+              "leftEdgeAnchor": 1,
+              "name": "Anchor",
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 1,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Dim",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 2,
+              "leftEdgeAnchor": 1,
+              "name": "Anchor",
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 1,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "animations": [
+            {
+              "name": "Dim",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Dim",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -1851,6 +2285,16 @@
                 "NoTouchArea",
                 "=",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Opacity"
+              },
+              "parameters": [
+                "Dim",
+                "=",
+                "150"
               ]
             }
           ]
@@ -3111,6 +3555,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Camera",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -3451,6 +3896,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Placing",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4245,6 +4691,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Saving",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4363,6 +4810,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Loading",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4617,6 +5065,97 @@
                 }
               ],
               "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Object Selector",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Always"
+                      },
+                      "parameters": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetCenter"
+                      },
+                      "parameters": [
+                        "ObjectSelectorPanel",
+                        "=",
+                        "SceneWindowWidth()/2",
+                        "=",
+                        "SceneWindowHeight()/2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetCenter"
+                      },
+                      "parameters": [
+                        "Dim",
+                        "=",
+                        "SceneWindowWidth()/2",
+                        "=",
+                        "SceneWindowHeight()/2"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "e"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ZoomCamera"
+                      },
+                      "parameters": [
+                        "",
+                        "0.1",
+                        "\"Object Selector\"",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenCameraZoom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"show\"",
+                        "1",
+                        "\"Object Selector\"",
+                        "500",
+                        "\"easeOutQuint\""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
             }
           ],
           "parameters": []
@@ -4827,6 +5366,22 @@
           "isLightingLayer": false,
           "isLocked": false,
           "name": "GUI",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Object Selector",
           "renderingType": "",
           "visibility": true,
           "cameras": [],
