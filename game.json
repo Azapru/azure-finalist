@@ -3820,6 +3820,15 @@
                         "",
                         "Left"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
+                      ]
                     }
                   ],
                   "actions": [
@@ -3939,6 +3948,15 @@
                       "parameters": [
                         "",
                         "Left"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
                       ]
                     }
                   ],
@@ -4381,6 +4399,15 @@
                       "parameters": [
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
+                      ]
                     }
                   ],
                   "actions": [
@@ -4433,6 +4460,15 @@
                         "value": "BuiltinCommonInstructions::Once"
                       },
                       "parameters": []
+                    },
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
+                      ]
                     }
                   ],
                   "actions": [
@@ -4494,6 +4530,15 @@
                         "no",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
+                      ]
                     }
                   ],
                   "actions": [
@@ -4516,7 +4561,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Modes",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4542,6 +4586,15 @@
                       "parameters": [
                         "",
                         "Left"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
                       ]
                     }
                   ],
@@ -4580,6 +4633,15 @@
                         "",
                         "Left"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
+                      ]
                     }
                   ],
                   "actions": [
@@ -4616,6 +4678,15 @@
                       "parameters": [
                         "",
                         "Left"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
                       ]
                     }
                   ],
@@ -4851,7 +4922,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Saving",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4877,6 +4947,15 @@
                         "",
                         "",
                         ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
                       ]
                     }
                   ],
@@ -4970,7 +5049,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Loading",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4996,6 +5074,15 @@
                         "",
                         "",
                         ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
                       ]
                     }
                   ],
@@ -5296,6 +5383,15 @@
                         "",
                         "\"Object Selector\""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "HideLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
+                      ]
                     }
                   ]
                 },
@@ -5321,6 +5417,15 @@
                         "",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
+                      ]
                     }
                   ],
                   "actions": [
@@ -5331,6 +5436,15 @@
                       "parameters": [
                         "",
                         "\"Object Selector\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "HideLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
                       ]
                     }
                   ]
