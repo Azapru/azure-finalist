@@ -474,6 +474,33 @@
         "name": "Panel3",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Panels/ItemSelectorPanel.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Panels\\ItemSelectorPanel.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ObjectSelectorButton.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ObjectSelectorButton",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ObjectSelectorButton2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ObjectSelectorButton2",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -509,7 +536,7 @@
         "gridColor": 6184542,
         "gridAlpha": 0.4,
         "snap": true,
-        "zoomFactor": 1.026942587498117,
+        "zoomFactor": 0.6455105703311552,
         "windowMask": false
       },
       "objectsGroups": [
@@ -539,6 +566,9 @@
             },
             {
               "name": "LoadButton"
+            },
+            {
+              "name": "ObjectSelectorButton"
             }
           ]
         },
@@ -780,25 +810,9 @@
           "name": "NoTouchArea",
           "persistentUuid": "d4d55f24-3056-487a-8781-0c0e0618a876",
           "width": 48,
-          "x": 648,
-          "y": 72,
+          "x": 72,
+          "y": 24,
           "zOrder": 15,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 560,
-          "layer": "Object Selector",
-          "name": "ObjectSelectorPanel",
-          "persistentUuid": "127dec6d-af23-4085-b2e2-5a59e070cebb",
-          "width": 1120,
-          "x": 80,
-          "y": 80,
-          "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -815,6 +829,37 @@
           "x": 0,
           "y": 0,
           "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Object Selector",
+          "name": "ObjectSelectorPanel",
+          "persistentUuid": "31df77fa-cd4b-4971-8af0-f7e0f3a48d09",
+          "width": 0,
+          "x": 80,
+          "y": 64,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "GUI",
+          "name": "ObjectSelectorButton",
+          "persistentUuid": "f737353e-aa0c-4b31-adef-c5535e068f25",
+          "width": 80,
+          "x": 1168,
+          "y": 608,
+          "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1869,6 +1914,59 @@
         },
         {
           "assetStoreId": "",
+          "name": "ObjectSelectorButton",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 0,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 0,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "animations": [
+            {
+              "name": "ObjectSelectorButton",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "ObjectSelectorButton2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
           "bold": false,
           "italic": false,
           "name": "ModeText",
@@ -2166,7 +2264,7 @@
           "bottomMargin": 12,
           "height": 64,
           "leftMargin": 12,
-          "name": "ObjectSelectorPanel",
+          "name": "ObjectSelectorPanelOld",
           "rightMargin": 12,
           "tags": "",
           "texture": "Panel",
@@ -2178,13 +2276,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 2,
               "leftEdgeAnchor": 1,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 2,
               "topEdgeAnchor": 1,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ]
@@ -2192,6 +2290,59 @@
         {
           "assetStoreId": "",
           "name": "Dim",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 2,
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 1,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "animations": [
+            {
+              "name": "Dim",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Dim",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "ObjectSelectorPanel",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -2211,17 +2362,16 @@
           ],
           "animations": [
             {
-              "name": "Dim",
+              "name": "",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
-                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Dim",
+                      "image": "assets\\Panels\\ItemSelectorPanel.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3896,7 +4046,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Placing",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -3993,6 +4142,17 @@
                           },
                           "parameters": [
                             "MoveMode",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "ObjectSelectorButton",
                             "",
                             "",
                             ""
@@ -5119,12 +5279,79 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "KeyReleased"
+                        "value": "KeyPressed"
                       },
                       "parameters": [
                         "",
                         "e"
                       ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ShowLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Object Selector\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "ObjectSelectorButton",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ShowLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Object Selector\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Object Selector\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
                     }
                   ],
                   "actions": [
@@ -5148,7 +5375,7 @@
                         "\"show\"",
                         "1",
                         "\"Object Selector\"",
-                        "500",
+                        "300",
                         "\"easeOutQuint\""
                       ]
                     }
@@ -5383,7 +5610,7 @@
           "isLocked": false,
           "name": "Object Selector",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": []
         }
