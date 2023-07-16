@@ -157,6 +157,12 @@ gdjs.GameCode.GDModeTextObjects3= [];
 gdjs.GameCode.GDModeTextObjects4= [];
 gdjs.GameCode.GDModeTextObjects5= [];
 gdjs.GameCode.GDModeTextObjects6= [];
+gdjs.GameCode.GDRotationTextObjects1= [];
+gdjs.GameCode.GDRotationTextObjects2= [];
+gdjs.GameCode.GDRotationTextObjects3= [];
+gdjs.GameCode.GDRotationTextObjects4= [];
+gdjs.GameCode.GDRotationTextObjects5= [];
+gdjs.GameCode.GDRotationTextObjects6= [];
 gdjs.GameCode.GDLvlDataDebugObjects1= [];
 gdjs.GameCode.GDLvlDataDebugObjects2= [];
 gdjs.GameCode.GDLvlDataDebugObjects3= [];
@@ -205,6 +211,12 @@ gdjs.GameCode.GDObjectSelectorPanelObjects3= [];
 gdjs.GameCode.GDObjectSelectorPanelObjects4= [];
 gdjs.GameCode.GDObjectSelectorPanelObjects5= [];
 gdjs.GameCode.GDObjectSelectorPanelObjects6= [];
+gdjs.GameCode.GDRotationViewObjects1= [];
+gdjs.GameCode.GDRotationViewObjects2= [];
+gdjs.GameCode.GDRotationViewObjects3= [];
+gdjs.GameCode.GDRotationViewObjects4= [];
+gdjs.GameCode.GDRotationViewObjects5= [];
+gdjs.GameCode.GDRotationViewObjects6= [];
 
 
 gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDJumpParticlesObjects1Objects = Hashtable.newFrom({"JumpParticles": gdjs.GameCode.GDJumpParticlesObjects1});
@@ -297,7 +309,7 @@ for (var i = 0, k = 0, l = gdjs.GameCode.GDPlayerObjects2.length;i<l;++i) {
 gdjs.GameCode.GDPlayerObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8378636);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9556268);
 }
 }
 }
@@ -337,7 +349,7 @@ for (var i = 0, k = 0, l = gdjs.GameCode.GDPlayerObjects1.length;i<l;++i) {
 gdjs.GameCode.GDPlayerObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9007292);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9170700);
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -489,7 +501,7 @@ for (var i = 0, k = 0, l = gdjs.GameCode.GDPlayerObjects3.length;i<l;++i) {
 gdjs.GameCode.GDPlayerObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8415692);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8196596);
 }
 }
 }
@@ -551,7 +563,7 @@ for (var i = 0, k = 0, l = gdjs.GameCode.GDPlayerObjects3.length;i<l;++i) {
 gdjs.GameCode.GDPlayerObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8417676);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8198684);
 }
 }
 }
@@ -604,7 +616,7 @@ for (var i = 0, k = 0, l = gdjs.GameCode.GDPlayerObjects3.length;i<l;++i) {
 gdjs.GameCode.GDPlayerObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8419516);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8200836);
 }
 }
 }
@@ -666,7 +678,7 @@ for (var i = 0, k = 0, l = gdjs.GameCode.GDPlayerObjects2.length;i<l;++i) {
 gdjs.GameCode.GDPlayerObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8421604);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8203500);
 }
 }
 }
@@ -793,7 +805,7 @@ for (var i = 0, k = 0, l = gdjs.GameCode.GDPlayerObjects1.length;i<l;++i) {
 gdjs.GameCode.GDPlayerObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8426892);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8208580);
 }
 }
 if (isConditionTrue_0) {
@@ -816,7 +828,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "LShift");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8415076);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8196028);
 }
 }
 if (isConditionTrue_0) {
@@ -1055,8 +1067,10 @@ gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDSelectorObjects3Objects = Hashtable.new
 gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDOffGridButtonObjects3Objects = Hashtable.newFrom({"OffGridButton": gdjs.GameCode.GDOffGridButtonObjects3});
 gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDNoTouchAreaObjects3Objects = Hashtable.newFrom({"NoTouchArea": gdjs.GameCode.GDNoTouchAreaObjects3});
 gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDBlockObjects3ObjectsGDgdjs_46GameCode_46GDLaserChainObjects3Objects = Hashtable.newFrom({"Block": gdjs.GameCode.GDBlockObjects3, "LaserChain": gdjs.GameCode.GDLaserChainObjects3});
-gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDBlockObjects2ObjectsGDgdjs_46GameCode_46GDLaserChainObjects2Objects = Hashtable.newFrom({"Block": gdjs.GameCode.GDBlockObjects2, "LaserChain": gdjs.GameCode.GDLaserChainObjects2});
-gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDNoTouchAreaObjects2Objects = Hashtable.newFrom({"NoTouchArea": gdjs.GameCode.GDNoTouchAreaObjects2});
+gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDBlockObjects3ObjectsGDgdjs_46GameCode_46GDLaserChainObjects3Objects = Hashtable.newFrom({"Block": gdjs.GameCode.GDBlockObjects3, "LaserChain": gdjs.GameCode.GDLaserChainObjects3});
+gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDNoTouchAreaObjects3Objects = Hashtable.newFrom({"NoTouchArea": gdjs.GameCode.GDNoTouchAreaObjects3});
+gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRotateRightButtonObjects3Objects = Hashtable.newFrom({"RotateRightButton": gdjs.GameCode.GDRotateRightButtonObjects3});
+gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRotateLeftButtonObjects3Objects = Hashtable.newFrom({"RotateLeftButton": gdjs.GameCode.GDRotateLeftButtonObjects3});
 gdjs.GameCode.eventsList7 = function(runtimeScene) {
 
 {
@@ -1412,7 +1426,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDNoTouchAreaObjects3Objects, runtimeScene, false, true);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9030140);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(7914788);
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -1428,6 +1442,12 @@ gdjs.GameCode.GDBlockObjects3.length = 0;
 gdjs.GameCode.GDLaserChainObjects3.length = 0;
 
 {gdjs.evtTools.object.createObjectFromGroupOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDBlockObjects3ObjectsGDgdjs_46GameCode_46GDLaserChainObjects3Objects, gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(4)), (( gdjs.GameCode.GDSelectorObjects3.length === 0 ) ? 0 :gdjs.GameCode.GDSelectorObjects3[0].getPointX("")), (( gdjs.GameCode.GDSelectorObjects3.length === 0 ) ? 0 :gdjs.GameCode.GDSelectorObjects3[0].getPointY("")), "");
+}{for(var i = 0, len = gdjs.GameCode.GDBlockObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDBlockObjects3[i].setAngle(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(5)));
+}
+for(var i = 0, len = gdjs.GameCode.GDLaserChainObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDLaserChainObjects3[i].setAngle(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(5)));
+}
 }}
 
 }
@@ -1435,22 +1455,22 @@ gdjs.GameCode.GDLaserChainObjects3.length = 0;
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Block"), gdjs.GameCode.GDBlockObjects2);
-gdjs.copyArray(runtimeScene.getObjects("LaserChain"), gdjs.GameCode.GDLaserChainObjects2);
-gdjs.copyArray(runtimeScene.getObjects("NoTouchArea"), gdjs.GameCode.GDNoTouchAreaObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Block"), gdjs.GameCode.GDBlockObjects3);
+gdjs.copyArray(runtimeScene.getObjects("LaserChain"), gdjs.GameCode.GDLaserChainObjects3);
+gdjs.copyArray(runtimeScene.getObjects("NoTouchArea"), gdjs.GameCode.GDNoTouchAreaObjects3);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDBlockObjects2ObjectsGDgdjs_46GameCode_46GDLaserChainObjects2Objects, runtimeScene, true, false);
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDBlockObjects3ObjectsGDgdjs_46GameCode_46GDLaserChainObjects3Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(0)) == "remove";
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDNoTouchAreaObjects2Objects, runtimeScene, false, true);
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDNoTouchAreaObjects3Objects, runtimeScene, false, true);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, "GUI");
@@ -1459,14 +1479,157 @@ isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, "GUI");
 }
 }
 if (isConditionTrue_0) {
-/* Reuse gdjs.GameCode.GDBlockObjects2 */
-/* Reuse gdjs.GameCode.GDLaserChainObjects2 */
-{for(var i = 0, len = gdjs.GameCode.GDBlockObjects2.length ;i < len;++i) {
-    gdjs.GameCode.GDBlockObjects2[i].deleteFromScene(runtimeScene);
+/* Reuse gdjs.GameCode.GDBlockObjects3 */
+/* Reuse gdjs.GameCode.GDLaserChainObjects3 */
+{for(var i = 0, len = gdjs.GameCode.GDBlockObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDBlockObjects3[i].deleteFromScene(runtimeScene);
 }
-for(var i = 0, len = gdjs.GameCode.GDLaserChainObjects2.length ;i < len;++i) {
-    gdjs.GameCode.GDLaserChainObjects2[i].deleteFromScene(runtimeScene);
+for(var i = 0, len = gdjs.GameCode.GDLaserChainObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDLaserChainObjects3[i].deleteFromScene(runtimeScene);
 }
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.common.logicalNegation(false);
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("RotationText"), gdjs.GameCode.GDRotationTextObjects3);
+gdjs.copyArray(runtimeScene.getObjects("RotationView"), gdjs.GameCode.GDRotationViewObjects3);
+gdjs.copyArray(runtimeScene.getObjects("Selector"), gdjs.GameCode.GDSelectorObjects3);
+{for(var i = 0, len = gdjs.GameCode.GDRotationTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDRotationTextObjects3[i].setString("Angle: " + gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(5)));
+}
+}{for(var i = 0, len = gdjs.GameCode.GDRotationViewObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDRotationViewObjects3[i].setAngle(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(5)));
+}
+}{for(var i = 0, len = gdjs.GameCode.GDSelectorObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDSelectorObjects3[i].setAngle(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(5)));
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("RotateRightButton"), gdjs.GameCode.GDRotateRightButtonObjects3);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRotateRightButtonObjects3Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, "GUI");
+}
+}
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().getFromIndex(5).add(45);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "d");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9258340);
+}
+}
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().getFromIndex(5).add(45);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("RotateLeftButton"), gdjs.GameCode.GDRotateLeftButtonObjects3);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRotateLeftButtonObjects3Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, "GUI");
+}
+}
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().getFromIndex(5).sub(45);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "a");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8972244);
+}
+}
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().getFromIndex(5).sub(45);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(5)) >= 360;
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().getFromIndex(5).setNumber(0);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(5)) >= 360;
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().getFromIndex(5).setNumber(0);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(5)) < 0;
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().getFromIndex(5).add(360);
 }}
 
 }
@@ -1846,7 +2009,7 @@ gdjs.GameCode.eventsList12(runtimeScene, asyncObjectsList);} //Subevents end.
 }
 
 
-};gdjs.GameCode.asyncCallback8987676 = function (runtimeScene, asyncObjectsList) {
+};gdjs.GameCode.asyncCallback7447548 = function (runtimeScene, asyncObjectsList) {
 gdjs.copyArray(runtimeScene.getObjects("Block"), gdjs.GameCode.GDBlockObjects3);
 gdjs.copyArray(runtimeScene.getObjects("LaserChain"), gdjs.GameCode.GDLaserChainObjects3);
 gdjs.copyArray(runtimeScene.getObjects("LvlDataDebug"), gdjs.GameCode.GDLvlDataDebugObjects3);
@@ -1874,7 +2037,7 @@ gdjs.GameCode.eventsList14 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__Clipboard__AsynchronouslyReadTextCrossPlaform.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(1), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.GameCode.asyncCallback8987676(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__Clipboard__AsynchronouslyReadTextCrossPlaform.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(1), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.GameCode.asyncCallback7447548(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -1941,7 +2104,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8969628);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8995356);
 }
 }
 if (isConditionTrue_0) {
@@ -1983,7 +2146,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, "Object Selector");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9028172);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8953380);
 }
 }
 if (isConditionTrue_0) {
@@ -2138,7 +2301,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDZoomInButtonObjects2ObjectsGDgdjs_46GameCode_46GDZoomOutButtonObjects2ObjectsGDgdjs_46GameCode_46GDOffGridButtonObjects2ObjectsGDgdjs_46GameCode_46GDPlacingModeObjects2ObjectsGDgdjs_46GameCode_46GDRemoveModeObjects2ObjectsGDgdjs_46GameCode_46GDMoveModeObjects2ObjectsGDgdjs_46GameCode_46GDSaveButtonObjects2ObjectsGDgdjs_46GameCode_46GDLoadButtonObjects2ObjectsGDgdjs_46GameCode_46GDObjectSelectorButtonObjects2ObjectsGDgdjs_46GameCode_46GDBlockSelectObjects2ObjectsGDgdjs_46GameCode_46GDLaserChainSelectObjects2ObjectsGDgdjs_46GameCode_46GDRotateRightButtonObjects2ObjectsGDgdjs_46GameCode_46GDRotateLeftButtonObjects2ObjectsGDgdjs_46GameCode_46GDCloseButtonObjects2Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9011748);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8950972);
 }
 }
 }
@@ -2212,7 +2375,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = !(gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left"));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8997788);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8969540);
 }
 }
 if (isConditionTrue_0) {
@@ -2559,6 +2722,12 @@ gdjs.GameCode.GDModeTextObjects3.length = 0;
 gdjs.GameCode.GDModeTextObjects4.length = 0;
 gdjs.GameCode.GDModeTextObjects5.length = 0;
 gdjs.GameCode.GDModeTextObjects6.length = 0;
+gdjs.GameCode.GDRotationTextObjects1.length = 0;
+gdjs.GameCode.GDRotationTextObjects2.length = 0;
+gdjs.GameCode.GDRotationTextObjects3.length = 0;
+gdjs.GameCode.GDRotationTextObjects4.length = 0;
+gdjs.GameCode.GDRotationTextObjects5.length = 0;
+gdjs.GameCode.GDRotationTextObjects6.length = 0;
 gdjs.GameCode.GDLvlDataDebugObjects1.length = 0;
 gdjs.GameCode.GDLvlDataDebugObjects2.length = 0;
 gdjs.GameCode.GDLvlDataDebugObjects3.length = 0;
@@ -2607,6 +2776,12 @@ gdjs.GameCode.GDObjectSelectorPanelObjects3.length = 0;
 gdjs.GameCode.GDObjectSelectorPanelObjects4.length = 0;
 gdjs.GameCode.GDObjectSelectorPanelObjects5.length = 0;
 gdjs.GameCode.GDObjectSelectorPanelObjects6.length = 0;
+gdjs.GameCode.GDRotationViewObjects1.length = 0;
+gdjs.GameCode.GDRotationViewObjects2.length = 0;
+gdjs.GameCode.GDRotationViewObjects3.length = 0;
+gdjs.GameCode.GDRotationViewObjects4.length = 0;
+gdjs.GameCode.GDRotationViewObjects5.length = 0;
+gdjs.GameCode.GDRotationViewObjects6.length = 0;
 
 gdjs.GameCode.eventsList19(runtimeScene);
 
