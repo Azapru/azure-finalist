@@ -528,6 +528,24 @@
         "name": "RotateLeftButton",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/CloseButton.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "CloseButton",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/CloseButton2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "CloseButton2",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -563,7 +581,7 @@
         "gridColor": 6184542,
         "gridAlpha": 0.4,
         "snap": true,
-        "zoomFactor": 0.7876290101673847,
+        "zoomFactor": 0.6672773998330055,
         "windowMask": false
       },
       "objectsGroups": [
@@ -608,6 +626,9 @@
             },
             {
               "name": "RotateLeftButton"
+            },
+            {
+              "name": "CloseButton"
             }
           ]
         },
@@ -976,6 +997,22 @@
           "x": 976,
           "y": 32,
           "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "Object Selector",
+          "name": "CloseButton",
+          "persistentUuid": "a98e75af-1bf9-412e-b26f-b7b2146bee18",
+          "width": 64,
+          "x": 1168,
+          "y": 32,
+          "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2238,6 +2275,59 @@
         },
         {
           "assetStoreId": "",
+          "name": "CloseButton",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 0,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 0,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "animations": [
+            {
+              "name": "CloseButton",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "CloseButton2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
           "bold": false,
           "italic": false,
           "name": "ModeText",
@@ -2249,9 +2339,9 @@
           "effects": [],
           "behaviors": [
             {
-              "leftEdgeAnchor": 2,
               "name": "Anchor",
               "type": "AnchorBehavior::AnchorBehavior",
+              "leftEdgeAnchor": 2,
               "rightEdgeAnchor": 2,
               "bottomEdgeAnchor": 0,
               "relativeToOriginalWindowSize": true,
@@ -4572,6 +4662,28 @@
                             "",
                             ""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "RotateRightButton",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "RotateLeftButton",
+                            "",
+                            "",
+                            ""
+                          ]
                         }
                       ]
                     }
@@ -5772,6 +5884,12 @@
                         "",
                         "e"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
                     }
                   ],
                   "actions": [
@@ -5912,10 +6030,73 @@
                         "value": "SourisSurObjet"
                       },
                       "parameters": [
+                        "CloseButton",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Object Selector\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "HideLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Object Selector\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShowLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
                         "BlockSelect",
                         "",
                         "",
                         ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Object Selector\""
                       ]
                     }
                   ],
@@ -5971,6 +6152,15 @@
                         "",
                         "",
                         ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Object Selector\""
                       ]
                     }
                   ],
