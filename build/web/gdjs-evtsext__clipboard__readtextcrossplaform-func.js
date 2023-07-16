@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Clipboard__ReadTextCrossPlaform !== "undefined") {
 gdjs.evtsExt__Clipboard__ReadTextCrossPlaform = {};
 
 
-gdjs.evtsExt__Clipboard__ReadTextCrossPlaform.userFunc0x9604e0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Clipboard__ReadTextCrossPlaform.userFunc0x80e100 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const electron = runtimeScene.getGame().getRenderer().getElectron();
 const callback =
@@ -41,7 +41,7 @@ gdjs.evtsExt__Clipboard__ReadTextCrossPlaform.eventsList0 = function(runtimeScen
 {
 
 
-gdjs.evtsExt__Clipboard__ReadTextCrossPlaform.userFunc0x9604e0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Clipboard__ReadTextCrossPlaform.userFunc0x80e100(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
