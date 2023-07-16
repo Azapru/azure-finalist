@@ -33,7 +33,7 @@
     "loadingScreen": {
       "backgroundColor": 0,
       "backgroundFadeInDuration": 0.2,
-      "backgroundImageResourceName": "",
+      "backgroundImageResourceName": "splash.png",
       "gdevelopLogoStyle": "light",
       "logoAndProgressFadeInDuration": 0.2,
       "logoAndProgressLogoFadeInDelay": 10000,
@@ -564,6 +564,24 @@
         "name": "RotationView2",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/E.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "E",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "splash.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "splash.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -599,7 +617,7 @@
         "gridColor": 6184542,
         "gridAlpha": 0.4,
         "snap": true,
-        "zoomFactor": 0.9296875000000117,
+        "zoomFactor": 1.02694258749812,
         "windowMask": false
       },
       "objectsGroups": [
@@ -859,9 +877,9 @@
           "name": "LvlDataDebug",
           "persistentUuid": "6b46345e-2a51-479b-b557-065c57826735",
           "width": 936,
-          "x": 24,
-          "y": 11,
-          "zOrder": 12,
+          "x": 16,
+          "y": 16,
+          "zOrder": 25,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1068,21 +1086,6 @@
           "x": 1056,
           "y": 128,
           "zOrder": 24,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "Player",
-          "persistentUuid": "ffa8dfb8-fbac-4e01-b3eb-662439c9e81d",
-          "width": 0,
-          "x": 576,
-          "y": 32,
-          "zOrder": 25,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2485,7 +2488,7 @@
               "useLegacyBottomAndRightAnchors": false
             }
           ],
-          "string": "[]",
+          "string": "AZURE FINALIST - Azapru's Editor Test Build - pls don't leak if possible thank you\n\n1 - Move mode\n2 - Place mode\n3 - Remove mode\n\nE - Open item selection\n\nA - Change angle -45\nD - Change angle +45\n\nLMouse - Move/Place/Remove\nRMouse - Remove (while in any mode)\nScrollMouse - Change zoom",
           "font": "assets/DungGeunMo.ttf",
           "textAlignment": "left",
           "characterSize": 16,
@@ -2991,6 +2994,59 @@
                         "name": "origine",
                         "x": 32,
                         "y": 32
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "KeyIndicatorE",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 0,
+              "name": "Anchor",
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 0,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "animations": [
+            {
+              "name": "E",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "E",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -5197,6 +5253,63 @@
                         "Mode",
                         "=",
                         "\"remove\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "NoTouchArea",
+                        "",
+                        "no",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "GameObjects",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "MouseButtonPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Right"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "GameObjects",
+                        "",
+                        "",
+                        ""
                       ]
                     },
                     {

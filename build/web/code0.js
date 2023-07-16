@@ -217,6 +217,12 @@ gdjs.GameCode.GDRotationViewObjects3= [];
 gdjs.GameCode.GDRotationViewObjects4= [];
 gdjs.GameCode.GDRotationViewObjects5= [];
 gdjs.GameCode.GDRotationViewObjects6= [];
+gdjs.GameCode.GDKeyIndicatorEObjects1= [];
+gdjs.GameCode.GDKeyIndicatorEObjects2= [];
+gdjs.GameCode.GDKeyIndicatorEObjects3= [];
+gdjs.GameCode.GDKeyIndicatorEObjects4= [];
+gdjs.GameCode.GDKeyIndicatorEObjects5= [];
+gdjs.GameCode.GDKeyIndicatorEObjects6= [];
 
 
 gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDJumpParticlesObjects1Objects = Hashtable.newFrom({"JumpParticles": gdjs.GameCode.GDJumpParticlesObjects1});
@@ -1069,6 +1075,8 @@ gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDNoTouchAreaObjects3Objects = Hashtable.
 gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDBlockObjects3ObjectsGDgdjs_46GameCode_46GDLaserChainObjects3Objects = Hashtable.newFrom({"Block": gdjs.GameCode.GDBlockObjects3, "LaserChain": gdjs.GameCode.GDLaserChainObjects3});
 gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDBlockObjects3ObjectsGDgdjs_46GameCode_46GDLaserChainObjects3Objects = Hashtable.newFrom({"Block": gdjs.GameCode.GDBlockObjects3, "LaserChain": gdjs.GameCode.GDLaserChainObjects3});
 gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDNoTouchAreaObjects3Objects = Hashtable.newFrom({"NoTouchArea": gdjs.GameCode.GDNoTouchAreaObjects3});
+gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDBlockObjects3ObjectsGDgdjs_46GameCode_46GDLaserChainObjects3Objects = Hashtable.newFrom({"Block": gdjs.GameCode.GDBlockObjects3, "LaserChain": gdjs.GameCode.GDLaserChainObjects3});
+gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDNoTouchAreaObjects3Objects = Hashtable.newFrom({"NoTouchArea": gdjs.GameCode.GDNoTouchAreaObjects3});
 gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRotateRightButtonObjects3Objects = Hashtable.newFrom({"RotateRightButton": gdjs.GameCode.GDRotateRightButtonObjects3});
 gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRotateLeftButtonObjects3Objects = Hashtable.newFrom({"RotateLeftButton": gdjs.GameCode.GDRotateLeftButtonObjects3});
 gdjs.GameCode.eventsList7 = function(runtimeScene) {
@@ -1475,6 +1483,41 @@ if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, "GUI");
 }
+}
+}
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.GameCode.GDBlockObjects3 */
+/* Reuse gdjs.GameCode.GDLaserChainObjects3 */
+{for(var i = 0, len = gdjs.GameCode.GDBlockObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDBlockObjects3[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.GameCode.GDLaserChainObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDLaserChainObjects3[i].deleteFromScene(runtimeScene);
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Block"), gdjs.GameCode.GDBlockObjects3);
+gdjs.copyArray(runtimeScene.getObjects("LaserChain"), gdjs.GameCode.GDLaserChainObjects3);
+gdjs.copyArray(runtimeScene.getObjects("NoTouchArea"), gdjs.GameCode.GDNoTouchAreaObjects3);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Right");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDBlockObjects3ObjectsGDgdjs_46GameCode_46GDLaserChainObjects3Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDNoTouchAreaObjects3Objects, runtimeScene, false, true);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, "GUI");
 }
 }
 }
@@ -2782,6 +2825,12 @@ gdjs.GameCode.GDRotationViewObjects3.length = 0;
 gdjs.GameCode.GDRotationViewObjects4.length = 0;
 gdjs.GameCode.GDRotationViewObjects5.length = 0;
 gdjs.GameCode.GDRotationViewObjects6.length = 0;
+gdjs.GameCode.GDKeyIndicatorEObjects1.length = 0;
+gdjs.GameCode.GDKeyIndicatorEObjects2.length = 0;
+gdjs.GameCode.GDKeyIndicatorEObjects3.length = 0;
+gdjs.GameCode.GDKeyIndicatorEObjects4.length = 0;
+gdjs.GameCode.GDKeyIndicatorEObjects5.length = 0;
+gdjs.GameCode.GDKeyIndicatorEObjects6.length = 0;
 
 gdjs.GameCode.eventsList19(runtimeScene);
 
