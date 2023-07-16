@@ -501,6 +501,33 @@
         "name": "ObjectSelectorButton2",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/RotateRightButton.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "RotateRightButton",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/RotateRightButton2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "RotateRightButton2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/RotateLeftButton.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "RotateLeftButton",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -536,7 +563,7 @@
         "gridColor": 6184542,
         "gridAlpha": 0.4,
         "snap": true,
-        "zoomFactor": 0.6455105703311552,
+        "zoomFactor": 0.7876290101673847,
         "windowMask": false
       },
       "objectsGroups": [
@@ -569,6 +596,18 @@
             },
             {
               "name": "ObjectSelectorButton"
+            },
+            {
+              "name": "BlockSelect"
+            },
+            {
+              "name": "LaserChainSelect"
+            },
+            {
+              "name": "RotateRightButton"
+            },
+            {
+              "name": "RotateLeftButton"
             }
           ]
         },
@@ -577,8 +616,15 @@
           "objects": [
             {
               "name": "Block"
+            },
+            {
+              "name": "LaserChain"
             }
           ]
+        },
+        {
+          "name": "ObjSelect",
+          "objects": []
         }
       ],
       "variables": [
@@ -605,6 +651,12 @@
           "name": "QueueStep",
           "type": "number",
           "value": 0
+        },
+        {
+          "folded": true,
+          "name": "SelectedItem",
+          "type": "string",
+          "value": ""
         }
       ],
       "instances": [
@@ -702,7 +754,7 @@
           "persistentUuid": "2fba5c05-8ddf-4602-887a-cefd64e384c2",
           "width": 80,
           "x": 1072,
-          "y": 32,
+          "y": 608,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -717,7 +769,7 @@
           "persistentUuid": "5b61bb17-cfd0-4ca1-b406-37063b85f371",
           "width": 80,
           "x": 1168,
-          "y": 32,
+          "y": 608,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -732,7 +784,7 @@
           "persistentUuid": "085977d1-76ac-4797-8218-cb2253dcf1a7",
           "width": 80,
           "x": 976,
-          "y": 32,
+          "y": 608,
           "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
@@ -746,8 +798,8 @@
           "name": "ModeText",
           "persistentUuid": "e0dcfa02-15f6-4824-9545-214b00f58574",
           "width": 0,
-          "x": 976,
-          "y": 124,
+          "x": 984,
+          "y": 571,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -858,8 +910,72 @@
           "persistentUuid": "f737353e-aa0c-4b31-adef-c5535e068f25",
           "width": 80,
           "x": 1168,
-          "y": 608,
+          "y": 512,
           "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "Object Selector",
+          "name": "BlockSelect",
+          "persistentUuid": "f184635d-ef59-465a-aa4b-5a5637646be6",
+          "width": 64,
+          "x": 144,
+          "y": 128,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "Object Selector",
+          "name": "LaserChainSelect",
+          "persistentUuid": "780505c2-0eb9-4179-b365-e9d83517d5da",
+          "width": 64,
+          "x": 240,
+          "y": 128,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "GUI",
+          "name": "RotateRightButton",
+          "persistentUuid": "bd0511b3-ed26-4485-9b78-af49f1cf5949",
+          "width": 80,
+          "x": 1168,
+          "y": 32,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "GUI",
+          "name": "RotateLeftButton",
+          "persistentUuid": "393a3622-eef2-4b2e-aaa1-4f51878d6fa4",
+          "width": 80,
+          "x": 976,
+          "y": 32,
+          "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1243,6 +1359,55 @@
         {
           "assetStoreId": "",
           "name": "Block",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Platform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": false,
+              "platformType": "NormalPlatform",
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets/Items/Block.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "BlockSelect",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -1967,6 +2132,112 @@
         },
         {
           "assetStoreId": "",
+          "name": "RotateRightButton",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 0,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 0,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "animations": [
+            {
+              "name": "RotateRightButton",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "RotateRightButton2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "RotateLeftButton",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 0,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 0,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "animations": [
+            {
+              "name": "RotateLeftButton",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "RotateLeftButton",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
           "bold": false,
           "italic": false,
           "name": "ModeText",
@@ -1978,9 +2249,9 @@
           "effects": [],
           "behaviors": [
             {
+              "leftEdgeAnchor": 2,
               "name": "Anchor",
               "type": "AnchorBehavior::AnchorBehavior",
-              "leftEdgeAnchor": 0,
               "rightEdgeAnchor": 2,
               "bottomEdgeAnchor": 0,
               "relativeToOriginalWindowSize": true,
@@ -2076,6 +2347,99 @@
         {
           "assetStoreId": "",
           "name": "LaserChain",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "assets\\Items\\laser",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Items\\laser",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Items\\laser2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Items\\laser3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Items\\laser4",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "LaserChainSelect",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -2350,13 +2714,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 2,
               "leftEdgeAnchor": 1,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 2,
               "topEdgeAnchor": 1,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -4073,6 +4437,39 @@
                   "conditions": [
                     {
                       "type": {
+                        "value": "BuiltinCommonInstructions::Always"
+                      },
+                      "parameters": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PauseAnimation"
+                      },
+                      "parameters": [
+                        "GameObjects"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeSprite"
+                      },
+                      "parameters": [
+                        "GameObjects",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
                         "value": "BuiltinCommonInstructions::Or"
                       },
                       "parameters": [],
@@ -4474,11 +4871,12 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "Create"
+                        "value": "CreateByName"
                       },
                       "parameters": [
                         "",
-                        "Block",
+                        "GameObjects",
+                        "VariableString(SelectedItem)",
                         "Selector.X()",
                         "Selector.Y()",
                         ""
@@ -4561,6 +4959,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Modes",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4922,6 +5321,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Saving",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -5299,7 +5699,7 @@
                                 "value": "SetAngle"
                               },
                               "parameters": [
-                                "Block",
+                                "GameObjects",
                                 "=",
                                 "Variable(queuedAngle)"
                               ]
@@ -5491,6 +5891,116 @@
                         "\"Object Selector\"",
                         "300",
                         "\"easeOutQuint\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "BlockSelect",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "HideLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Object Selector\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShowLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "SelectedItem",
+                        "=",
+                        "\"Block\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "LaserChainSelect",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "HideLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Object Selector\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShowLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "SelectedItem",
+                        "=",
+                        "\"LaserChain\""
                       ]
                     }
                   ]
