@@ -3521,7 +3521,7 @@
               "parameters": [
                 "NoTouchArea",
                 "=",
-                "100"
+                "0"
               ]
             },
             {
@@ -4841,6 +4841,15 @@
                         "=",
                         "\"move\""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
+                      ]
                     }
                   ],
                   "actions": [
@@ -4895,6 +4904,15 @@
                       "parameters": [
                         "",
                         "Middle"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
                       ]
                     }
                   ],
@@ -5025,6 +5043,15 @@
                       "parameters": [
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
+                      ]
                     }
                   ],
                   "actions": [
@@ -5154,6 +5181,15 @@
                       "parameters": [
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
+                      ]
                     }
                   ],
                   "actions": [
@@ -5206,6 +5242,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Placing",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -7063,6 +7100,15 @@
                         "value": "BuiltinCommonInstructions::Once"
                       },
                       "parameters": []
+                    },
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
+                      ]
                     }
                   ],
                   "actions": [
