@@ -617,7 +617,7 @@
         "gridColor": 6184542,
         "gridAlpha": 0.4,
         "snap": true,
-        "zoomFactor": 0.8993607583666735,
+        "zoomFactor": 0.8700232859857417,
         "windowMask": false
       },
       "objectsGroups": [
@@ -665,6 +665,9 @@
             },
             {
               "name": "CloseButton"
+            },
+            {
+              "name": "SpikeySelect"
             }
           ]
         },
@@ -676,12 +679,25 @@
             },
             {
               "name": "LaserChain"
+            },
+            {
+              "name": "Spikey"
             }
           ]
         },
         {
           "name": "ObjSelect",
-          "objects": []
+          "objects": [
+            {
+              "name": "SpikeySelect"
+            },
+            {
+              "name": "BlockSelect"
+            },
+            {
+              "name": "LaserChainSelect"
+            }
+          ]
         }
       ],
       "variables": [
@@ -1005,7 +1021,7 @@
           "name": "LaserChainSelect",
           "persistentUuid": "780505c2-0eb9-4179-b365-e9d83517d5da",
           "width": 64,
-          "x": 240,
+          "x": 224,
           "y": 128,
           "zOrder": 19,
           "numberProperties": [],
@@ -1103,6 +1119,22 @@
           "x": 128,
           "y": 576,
           "zOrder": 26,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "Object Selector",
+          "name": "SpikeySelect",
+          "persistentUuid": "46eaa304-e0c5-425d-81ce-03f2a7663cb7",
+          "width": 64,
+          "x": 304,
+          "y": 128,
+          "zOrder": 27,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1538,7 +1570,14 @@
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "obj",
+              "type": "string",
+              "value": "Block"
+            }
+          ],
           "effects": [],
           "behaviors": [
             {
@@ -2538,7 +2577,7 @@
               "useLegacyBottomAndRightAnchors": false
             }
           ],
-          "string": "AZURE FINALIST - Azapru's Editor Test Build - pls don't leak if possible thank you\n\n1 - Move mode\n2 - Place mode\n3 - Remove mode\n\nE - Open item selection\n\nA - Change angle -45\nD - Change angle +45\n\nLMouse - Move/Place/Remove\nRMouse - Remove (while in any mode)\nScrollMouse - Change zoom",
+          "string": "AZURE FINALIST - Azapru's Editor Test Build - pls don't leak if possible thank you\n\n1 - Move mode\n2 - Place mode\n3 - Remove mode\n\nE - Open item selection\n\nA - Change angle -45\nD - Change angle +45\n\nLMouse - Move/Place/Remove\nRMouse - Remove (while in any mode)\nMiddleMouse - Move (while in any mode)\nScrollMouse - Change zoom",
           "font": "assets/DungGeunMo.ttf",
           "textAlignment": "left",
           "characterSize": 16,
@@ -2689,7 +2728,14 @@
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "obj",
+              "type": "string",
+              "value": "LaserChain"
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -2783,6 +2829,106 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Spikey",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Spikey",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Spikey2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Spikey3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Spikey4",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "SpikeySelect",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "folded": true,
+              "name": "obj",
+              "type": "string",
+              "value": "Spikey"
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -4425,6 +4571,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Camera",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4838,7 +4985,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Placing",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -6765,7 +6911,7 @@
                         "value": "SourisSurObjet"
                       },
                       "parameters": [
-                        "BlockSelect",
+                        "ObjSelect",
                         "",
                         "",
                         ""
@@ -6807,71 +6953,7 @@
                       "parameters": [
                         "SelectedItem",
                         "=",
-                        "\"Block\""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "MouseButtonReleased"
-                      },
-                      "parameters": [
-                        "",
-                        "Left"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SourisSurObjet"
-                      },
-                      "parameters": [
-                        "LaserChainSelect",
-                        "",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "LayerVisible"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Object Selector\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "HideLayer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Object Selector\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ShowLayer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"GUI\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarSceneTxt"
-                      },
-                      "parameters": [
-                        "SelectedItem",
-                        "=",
-                        "\"LaserChain\""
+                        "ObjSelect.VariableString(obj)"
                       ]
                     }
                   ]
