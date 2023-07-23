@@ -644,7 +644,7 @@
         "gridColor": 6184542,
         "gridAlpha": 0.4,
         "snap": true,
-        "zoomFactor": 0.8700232859857432,
+        "zoomFactor": 0.6897782140104621,
         "windowMask": false
       },
       "objectsGroups": [
@@ -701,6 +701,9 @@
             },
             {
               "name": "PreviewButton"
+            },
+            {
+              "name": "ExitPreviewButton"
             }
           ]
         },
@@ -939,7 +942,7 @@
           "name": "LvlDataDebug",
           "persistentUuid": "6b46345e-2a51-479b-b557-065c57826735",
           "width": 936,
-          "x": 16,
+          "x": 32,
           "y": 16,
           "zOrder": 25,
           "numberProperties": [],
@@ -972,7 +975,7 @@
           "persistentUuid": "16b6ce20-cca6-4c21-928b-d0dff3e3b6ce",
           "width": 80,
           "x": 32,
-          "y": 32,
+          "y": 320,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -1212,6 +1215,22 @@
           "x": 1168,
           "y": 272,
           "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "Preview GUI",
+          "name": "ExitPreviewButton",
+          "persistentUuid": "00c2a774-33da-46b9-9ab4-e2d09814368f",
+          "width": 80,
+          "x": 32,
+          "y": 32,
+          "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1991,6 +2010,63 @@
         {
           "assetStoreId": "",
           "name": "LoadButton",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "topEdgeAnchor": 0,
+              "useLegacyBottomAndRightAnchors": false
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "LoadButton",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "LoadButton",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "ExitPreviewButton",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -5223,6 +5299,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Placing",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -7538,6 +7615,51 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "ExitPreviewButton",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "LayerVisible"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Preview GUI\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Preview",
+                    "False"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
                     "value": "SceneVariableAsBoolean"
                   },
                   "parameters": [
@@ -7555,11 +7677,11 @@
               "actions": [
                 {
                   "type": {
-                    "value": "HideLayer"
+                    "value": "ShowLayer"
                   },
                   "parameters": [
                     "",
-                    "\"Object Selector\""
+                    "\"Preview GUI\""
                   ]
                 },
                 {
@@ -7644,7 +7766,7 @@
                   "parameters": [
                     "",
                     "=",
-                    "640",
+                    "SceneWindowWidth()/2",
                     "",
                     "0"
                   ]
@@ -7658,6 +7780,54 @@
                     "=",
                     "360",
                     "",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "SceneWindowWidth()/2",
+                    "\"Selector\"",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterY"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "360",
+                    "\"Selector\"",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "SceneWindowWidth()/2",
+                    "\"Grid\"",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterY"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "360",
+                    "\"Grid\"",
                     "0"
                   ]
                 },
@@ -7680,6 +7850,92 @@
                     "Player",
                     "PlayerSpawn.X()",
                     "PlayerSpawn.Y()",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Preview",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Preview GUI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"GUI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"NoTouchArea layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Grid\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Selector\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "PlayerSpawn",
+                    "=",
+                    "255"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Player",
                     ""
                   ]
                 }
@@ -7792,6 +8048,22 @@
           "isLightingLayer": false,
           "isLocked": false,
           "name": "Object Selector",
+          "renderingType": "",
+          "visibility": false,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Preview GUI",
           "renderingType": "",
           "visibility": false,
           "cameras": [],
