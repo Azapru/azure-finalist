@@ -331,7 +331,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.Ch
 gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9529564);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9718948);
 }
 }
 }
@@ -359,7 +359,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9520620);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9710004);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects1, gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects2);
@@ -512,7 +512,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.Ch
 gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9527636);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9717020);
 }
 }
 if (isConditionTrue_0) {
@@ -550,7 +550,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.Ch
 gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9519028);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9708412);
 }
 }
 if (isConditionTrue_0) {
@@ -611,7 +611,7 @@ gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.d
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9533492);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9722876);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects1, gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects2);
@@ -704,7 +704,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.Ch
 gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9536732);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9726116);
 }
 }
 }
@@ -748,7 +748,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.Ch
 gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9538596);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9727980);
 }
 }
 if (isConditionTrue_0) {
@@ -794,7 +794,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.Ch
 gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9539164);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9728548);
 }
 }
 }
@@ -890,7 +890,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.Ch
 gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9547460);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9736844);
 }
 }
 if (isConditionTrue_0) {
@@ -929,7 +929,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.Ch
 gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9548476);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9737860);
 }
 }
 if (isConditionTrue_0) {
@@ -959,7 +959,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9543284);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9732668);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects1, gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects2);
@@ -1056,7 +1056,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.Ch
 gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9546356);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9735740);
 }
 }
 }
@@ -1092,7 +1092,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.Ch
 gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9550404);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9739788);
 }
 }
 if (isConditionTrue_0) {
@@ -1130,7 +1130,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.Ch
 gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9541956);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9731340);
 }
 }
 if (isConditionTrue_0) {
@@ -1180,7 +1180,7 @@ gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.d
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9553188);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9742572);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects1, gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects2);
@@ -1320,7 +1320,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.Ch
 gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9556628);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9746012);
 }
 }
 if (isConditionTrue_0) {
@@ -1356,7 +1356,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.Ch
 gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9558164);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9747548);
 }
 }
 if (isConditionTrue_0) {
@@ -1394,7 +1394,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.Ch
 gdjs.evtsExt__CharacterGameFeel__CharacterGameFeel.CharacterGameFeel.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9551860);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(9741244);
 }
 }
 if (isConditionTrue_0) {
