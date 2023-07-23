@@ -582,6 +582,24 @@
         "name": "splash.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/PlayerSpawn.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerSpawn",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/PlayerSpawn2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PlayerSpawn2",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -617,7 +635,7 @@
         "gridColor": 6184542,
         "gridAlpha": 0.4,
         "snap": true,
-        "zoomFactor": 0.8700232859857417,
+        "zoomFactor": 0.7370816317994149,
         "windowMask": false
       },
       "objectsGroups": [
@@ -668,6 +686,9 @@
             },
             {
               "name": "SpikeySelect"
+            },
+            {
+              "name": "PlayerSpawnSelect"
             }
           ]
         },
@@ -682,6 +703,9 @@
             },
             {
               "name": "Spikey"
+            },
+            {
+              "name": "PlayerSpawn"
             }
           ]
         },
@@ -696,6 +720,9 @@
             },
             {
               "name": "LaserChainSelect"
+            },
+            {
+              "name": "PlayerSpawnSelect"
             }
           ]
         }
@@ -1005,7 +1032,7 @@
           "name": "BlockSelect",
           "persistentUuid": "f184635d-ef59-465a-aa4b-5a5637646be6",
           "width": 64,
-          "x": 144,
+          "x": 224,
           "y": 128,
           "zOrder": 18,
           "numberProperties": [],
@@ -1021,7 +1048,7 @@
           "name": "LaserChainSelect",
           "persistentUuid": "780505c2-0eb9-4179-b365-e9d83517d5da",
           "width": 64,
-          "x": 224,
+          "x": 304,
           "y": 128,
           "zOrder": 19,
           "numberProperties": [],
@@ -1132,9 +1159,25 @@
           "name": "SpikeySelect",
           "persistentUuid": "46eaa304-e0c5-425d-81ce-03f2a7663cb7",
           "width": 64,
-          "x": 304,
+          "x": 384,
           "y": 128,
           "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "Object Selector",
+          "name": "PlayerSpawnSelect",
+          "persistentUuid": "e2d8e256-1afd-4a3e-a139-818a3a7c28f3",
+          "width": 64,
+          "x": 144,
+          "y": 128,
+          "zOrder": 28,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1350,6 +1393,97 @@
                         "name": "origine",
                         "x": 17.5,
                         "y": 35
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "PlayerSpawn",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "PlayerSpawn",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "PlayerSpawn2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "PlayerSpawnSelect",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "folded": true,
+              "name": "obj",
+              "type": "string",
+              "value": "PlayerSpawn"
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "PlayerSpawn",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "PlayerSpawn2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -4994,6 +5128,36 @@
                   "conditions": [
                     {
                       "type": {
+                        "value": "SceneInstancesCount"
+                      },
+                      "parameters": [
+                        "",
+                        "PlayerSpawn",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "PlayerSpawn",
+                        "24",
+                        "24",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
                         "value": "BuiltinCommonInstructions::Always"
                       },
                       "parameters": [
@@ -5394,6 +5558,77 @@
                       "parameters": [
                         "OffGridButton",
                         "state"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "HasAnyTouchOrMouseStarted"
+                      },
+                      "parameters": [
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarSceneTxt"
+                      },
+                      "parameters": [
+                        "SelectedItem",
+                        "=",
+                        "\"PlayerSpawn\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarSceneTxt"
+                      },
+                      "parameters": [
+                        "Mode",
+                        "=",
+                        "\"place\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "NoTouchArea",
+                        "",
+                        "no",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GUI\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "PlayerSpawn",
+                        ""
                       ]
                     }
                   ]
@@ -6647,6 +6882,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Object Selector",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
