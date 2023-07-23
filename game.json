@@ -617,7 +617,7 @@
         "gridColor": 6184542,
         "gridAlpha": 0.4,
         "snap": true,
-        "zoomFactor": 1.02694258749812,
+        "zoomFactor": 0.8993607583666735,
         "windowMask": false
       },
       "objectsGroups": [
@@ -855,14 +855,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
           "layer": "GUI",
           "name": "ModeText",
           "persistentUuid": "e0dcfa02-15f6-4824-9545-214b00f58574",
-          "width": 0,
-          "x": 984,
-          "y": 571,
+          "width": 272,
+          "x": 880,
+          "y": 544,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -1086,6 +1087,22 @@
           "x": 1056,
           "y": 128,
           "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 21,
+          "layer": "GUI",
+          "name": "SelectionText",
+          "persistentUuid": "8e5f79b5-9c52-4f28-a542-7b4f5212f10c",
+          "width": 1024,
+          "x": 128,
+          "y": 576,
+          "zOrder": 26,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2424,7 +2441,40 @@
           ],
           "string": "Mode: move",
           "font": "assets/DungGeunMo.ttf",
-          "textAlignment": "left",
+          "textAlignment": "right",
+          "characterSize": 24,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "SelectionText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "leftEdgeAnchor": 2,
+              "rightEdgeAnchor": 2,
+              "bottomEdgeAnchor": 0,
+              "relativeToOriginalWindowSize": true,
+              "topEdgeAnchor": 0,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "string": "Selection: ",
+          "font": "assets/DungGeunMo.ttf",
+          "textAlignment": "right",
           "characterSize": 24,
           "color": {
             "b": 255,
@@ -2962,13 +3012,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 0,
               "leftEdgeAnchor": 0,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 2,
               "topEdgeAnchor": 0,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             },
             {
@@ -3019,13 +3069,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 0,
               "leftEdgeAnchor": 0,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 2,
               "topEdgeAnchor": 0,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -4375,7 +4425,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Camera",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4463,6 +4512,61 @@
                         "\"Selector\"",
                         "\"both\"",
                         "Left",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "MouseButtonPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Middle"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "DragCameraWithPointer::DragCameraWithPointer"
+                      },
+                      "parameters": [
+                        "",
+                        "0",
+                        "",
+                        "\"both\"",
+                        "Middle",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DragCameraWithPointer::DragCameraWithPointer"
+                      },
+                      "parameters": [
+                        "",
+                        "0",
+                        "\"Grid\"",
+                        "\"both\"",
+                        "Middle",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DragCameraWithPointer::DragCameraWithPointer"
+                      },
+                      "parameters": [
+                        "",
+                        "0",
+                        "\"Selector\"",
+                        "\"both\"",
+                        "Middle",
                         ""
                       ]
                     }
@@ -4734,6 +4838,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Placing",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -6435,6 +6540,16 @@
                         "SceneWindowWidth()/2",
                         "=",
                         "SceneWindowHeight()/2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "SelectionText",
+                        "=",
+                        "\"Selection: \"+VariableString(SelectedItem)"
                       ]
                     }
                   ]
