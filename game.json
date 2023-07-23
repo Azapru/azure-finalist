@@ -1277,6 +1277,7 @@
               "NLandScalingSpeed": 100
             },
             {
+              "canGoDownFromJumpthru": false,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 3000,
@@ -1288,7 +1289,6 @@
               "maxSpeed": 300,
               "canGrabWithoutMoving": false,
               "ignoreDefaultControls": true,
-              "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
               "ladderClimbingSpeed": 150,
               "slopeMaxAngle": 60,
@@ -4792,7 +4792,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Camera",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -5242,7 +5241,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Placing",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -5282,10 +5280,11 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "BuiltinCommonInstructions::Always"
+                        "value": "SceneVariableAsBoolean"
                       },
                       "parameters": [
-                        ""
+                        "Preview",
+                        "False"
                       ]
                     }
                   ],
@@ -5318,6 +5317,30 @@
                         "-1000",
                         "=",
                         "-1000"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Preview",
+                        "True"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlayAnimation"
+                      },
+                      "parameters": [
+                        "GameObjects"
                       ]
                     }
                   ]
@@ -7591,6 +7614,91 @@
                   "parameters": [
                     "",
                     "\"Selector\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenCameraZoom"
+                  },
+                  "parameters": [
+                    "",
+                    "\"zoomIn\"",
+                    "1",
+                    "\"Grid\"",
+                    "150",
+                    "\"easeOutQuad\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenCameraZoom"
+                  },
+                  "parameters": [
+                    "",
+                    "\"zoomIn\"",
+                    "1",
+                    "",
+                    "150",
+                    "\"easeOutQuad\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenCameraZoom"
+                  },
+                  "parameters": [
+                    "",
+                    "\"zoomIn\"",
+                    "1",
+                    "\"Selector\"",
+                    "150",
+                    "\"easeOutQuad\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "640",
+                    "",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterY"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "360",
+                    "",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "PlayerSpawn",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Player",
+                    "PlayerSpawn.X()",
+                    "PlayerSpawn.Y()",
+                    ""
                   ]
                 }
               ]
