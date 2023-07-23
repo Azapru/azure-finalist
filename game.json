@@ -600,6 +600,15 @@
         "name": "PlayerSpawn2",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/PreviewButton.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PreviewButton",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -635,7 +644,7 @@
         "gridColor": 6184542,
         "gridAlpha": 0.4,
         "snap": true,
-        "zoomFactor": 0.7370816317994149,
+        "zoomFactor": 0.8700232859857432,
         "windowMask": false
       },
       "objectsGroups": [
@@ -689,6 +698,9 @@
             },
             {
               "name": "PlayerSpawnSelect"
+            },
+            {
+              "name": "PreviewButton"
             }
           ]
         },
@@ -763,6 +775,12 @@
           "name": "ItemRotationAngle",
           "type": "number",
           "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Preview",
+          "type": "boolean",
+          "value": false
         }
       ],
       "instances": [
@@ -965,7 +983,7 @@
           "customSize": true,
           "depth": 0,
           "height": 48,
-          "layer": "Selector",
+          "layer": "",
           "name": "NoTouchArea",
           "persistentUuid": "d4d55f24-3056-487a-8781-0c0e0618a876",
           "width": 48,
@@ -1178,6 +1196,22 @@
           "x": 144,
           "y": 128,
           "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "layer": "GUI",
+          "name": "PreviewButton",
+          "persistentUuid": "b302297b-20bd-4a61-9ed8-3a9354aebb6c",
+          "width": 80,
+          "x": 1168,
+          "y": 272,
+          "zOrder": 29,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2538,6 +2572,59 @@
         },
         {
           "assetStoreId": "",
+          "name": "PreviewButton",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 0,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 0,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "animations": [
+            {
+              "name": "PreviewButton",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "PreviewButton",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
           "name": "CloseButton",
           "tags": "",
           "type": "Sprite",
@@ -3434,7 +3521,7 @@
               "parameters": [
                 "NoTouchArea",
                 "=",
-                "0"
+                "100"
               ]
             },
             {
@@ -5183,6 +5270,18 @@
                         "=",
                         "0"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetCenter"
+                      },
+                      "parameters": [
+                        "NoTouchArea",
+                        "=",
+                        "-1000",
+                        "=",
+                        "-1000"
+                      ]
                     }
                   ]
                 },
@@ -5311,6 +5410,17 @@
                           },
                           "parameters": [
                             "RotateLeftButton",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "PreviewButton",
                             "",
                             "",
                             ""
@@ -7311,6 +7421,130 @@
                     "Buttons",
                     "=",
                     "255"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Level Player System (preview)",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "PreviewButton",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "LayerVisible"
+                  },
+                  "parameters": [
+                    "",
+                    "\"GUI\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Preview",
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Preview",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Object Selector\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"GUI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"NoTouchArea layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Grid\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Selector\""
                   ]
                 }
               ]
