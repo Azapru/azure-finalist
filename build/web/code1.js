@@ -69,7 +69,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.Level_32Packs_32MenuCode.mapOfGDgdjs_9546Level_959532Packs_959532MenuCode_9546GDLevelPacksMenuButtonObjects2ObjectsGDgdjs_9546Level_959532Packs_959532MenuCode_9546GDLevelPackTest1Objects2ObjectsGDgdjs_9546Level_959532Packs_959532MenuCode_9546GDLevelPackCoverObjects2Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11261156);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10717788);
 }
 }
 }
@@ -99,7 +99,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = !(gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left"));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8443548);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10717500);
 }
 }
 if (isConditionTrue_0) {
@@ -231,7 +231,7 @@ for(var i = 0, len = gdjs.Level_32Packs_32MenuCode.GDLaserChainObjects1.length ;
 };gdjs.Level_32Packs_32MenuCode.mapOfGDgdjs_9546Level_959532Packs_959532MenuCode_9546GDLevelPackTest2Objects2ObjectsGDgdjs_9546Level_959532Packs_959532MenuCode_9546GDLevelPackTest1Objects2Objects = Hashtable.newFrom({"LevelPackTest2": gdjs.Level_32Packs_32MenuCode.GDLevelPackTest2Objects2, "LevelPackTest1": gdjs.Level_32Packs_32MenuCode.GDLevelPackTest1Objects2});
 gdjs.Level_32Packs_32MenuCode.mapOfGDgdjs_9546Level_959532Packs_959532MenuCode_9546GDLevelPackCoverObjects3Objects = Hashtable.newFrom({"LevelPackCover": gdjs.Level_32Packs_32MenuCode.GDLevelPackCoverObjects3});
 gdjs.Level_32Packs_32MenuCode.mapOfGDgdjs_9546Level_959532Packs_959532MenuCode_9546GDLevelPackCoverObjects5Objects = Hashtable.newFrom({"LevelPackCover": gdjs.Level_32Packs_32MenuCode.GDLevelPackCoverObjects5});
-gdjs.Level_32Packs_32MenuCode.asyncCallback8463348 = function (runtimeScene, asyncObjectsList) {
+gdjs.Level_32Packs_32MenuCode.asyncCallback10723852 = function (runtimeScene, asyncObjectsList) {
 gdjs.copyArray(asyncObjectsList.getObjects("LevelPackCover"), gdjs.Level_32Packs_32MenuCode.GDLevelPackCoverObjects5);
 
 gdjs.copyArray(asyncObjectsList.getObjects("LevelPackTest1"), gdjs.Level_32Packs_32MenuCode.GDLevelPackTest1Objects5);
@@ -251,7 +251,7 @@ const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.Level_32Packs_32MenuCode.GDLevelPackCoverObjects3) asyncObjectsList.addObject("LevelPackCover", obj);
 for (const obj of gdjs.Level_32Packs_32MenuCode.GDLevelPackTest1Objects3) asyncObjectsList.addObject("LevelPackTest1", obj);
 for (const obj of gdjs.Level_32Packs_32MenuCode.GDLevelPackTest2Objects3) asyncObjectsList.addObject("LevelPackTest2", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.01), (runtimeScene) => (gdjs.Level_32Packs_32MenuCode.asyncCallback8463348(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.01), (runtimeScene) => (gdjs.Level_32Packs_32MenuCode.asyncCallback10723852(runtimeScene, asyncObjectsList)));
 }
 }
 

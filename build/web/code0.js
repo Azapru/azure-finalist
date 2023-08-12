@@ -32,7 +32,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.Main_32MenuCode.mapOfGDgdjs_9546Main_959532MenuCode_9546GDLevelPacksMenuButtonObjects2Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10550612);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10677940);
 }
 }
 }
@@ -54,7 +54,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = !(gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left"));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10550324);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10677652);
 }
 }
 if (isConditionTrue_0) {

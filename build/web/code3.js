@@ -26,7 +26,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.PackCode.mapOfGDgdjs_9546PackCode_9546GDLevelButtonObjects2Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9265060);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10952052);
 }
 }
 }
@@ -48,7 +48,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = !(gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left"));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9366244);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10951716);
 }
 }
 if (isConditionTrue_0) {
@@ -78,7 +78,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.PackCode.asyncCallback9216212 = function (runtimeScene, asyncObjectsList) {
+};gdjs.PackCode.asyncCallback10954908 = function (runtimeScene, asyncObjectsList) {
 }
 gdjs.PackCode.eventsList1 = function(runtimeScene) {
 
@@ -88,7 +88,7 @@ gdjs.PackCode.eventsList1 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)) + "levels.txt", "", "GET", "application/x-www-form-urlencoded", runtimeScene.getScene().getVariables().getFromIndex(0), runtimeScene.getScene().getVariables().getFromIndex(1)), (runtimeScene) => (gdjs.PackCode.asyncCallback9216212(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)) + "levels.txt", "", "GET", "application/x-www-form-urlencoded", runtimeScene.getScene().getVariables().getFromIndex(0), runtimeScene.getScene().getVariables().getFromIndex(1)), (runtimeScene) => (gdjs.PackCode.asyncCallback10954908(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -99,7 +99,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableA
 gdjs.PackCode.eventsList2 = function(runtimeScene) {
 
 };gdjs.PackCode.mapOfGDgdjs_9546PackCode_9546GDLevelButtonObjects1Objects = Hashtable.newFrom({"LevelButton": gdjs.PackCode.GDLevelButtonObjects1});
-gdjs.PackCode.asyncCallback9372316 = function (runtimeScene, asyncObjectsList) {
+gdjs.PackCode.asyncCallback10958524 = function (runtimeScene, asyncObjectsList) {
 {runtimeScene.getGame().getVariables().getFromIndex(0).setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("GET_LEVEL_DATA")));
 }{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Game", true);
 }}
@@ -112,7 +112,7 @@ gdjs.PackCode.eventsList3 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)) + gdjs.evtTools.common.toString((gdjs.RuntimeObject.getVariableNumber(((gdjs.PackCode.GDLevelButtonObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.PackCode.GDLevelButtonObjects1[0].getVariables()).get("level")))) + ".json", "", "GET", "application/x-www-form-urlencoded", runtimeScene.getScene().getVariables().get("GET_LEVEL_DATA"), runtimeScene.getScene().getVariables().get("GET_LEVEL_DATA_ERROR")), (runtimeScene) => (gdjs.PackCode.asyncCallback9372316(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)) + gdjs.evtTools.common.toString((gdjs.RuntimeObject.getVariableNumber(((gdjs.PackCode.GDLevelButtonObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.PackCode.GDLevelButtonObjects1[0].getVariables()).get("level")))) + ".json", "", "GET", "application/x-www-form-urlencoded", runtimeScene.getScene().getVariables().get("GET_LEVEL_DATA"), runtimeScene.getScene().getVariables().get("GET_LEVEL_DATA_ERROR")), (runtimeScene) => (gdjs.PackCode.asyncCallback10958524(runtimeScene, asyncObjectsList)));
 }
 }
 

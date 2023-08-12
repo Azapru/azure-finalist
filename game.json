@@ -669,7 +669,7 @@
       "folded": true,
       "name": "currentPack",
       "type": "string",
-      "value": "https://notabug.org/shizukashiraga/azure-finalist-levels/raw/master/AnotherTest/"
+      "value": "https://raw.githubusercontent.com/Azapru/azure-finalist/main/online/packs/AnotherTest/"
     }
   ],
   "layouts": [
@@ -693,7 +693,7 @@
         "gridColor": 5131854,
         "gridAlpha": 0.4,
         "snap": true,
-        "zoomFactor": 0.7876290101673771,
+        "zoomFactor": 0.7130377630690412,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4728,7 +4728,7 @@
               "folded": true,
               "name": "pack",
               "type": "string",
-              "value": "https://notabug.org/shizukashiraga/azure-finalist-levels/raw/master/test/"
+              "value": "https://raw.githubusercontent.com/Azapru/azure-finalist/main/online/packs/test/"
             }
           ],
           "effects": [],
@@ -4778,7 +4778,7 @@
               "folded": true,
               "name": "pack",
               "type": "string",
-              "value": "https://notabug.org/shizukashiraga/azure-finalist-levels/raw/master/AnotherTest/"
+              "value": "https://raw.githubusercontent.com/Azapru/azure-finalist/main/online/packs/AnotherTest/"
             }
           ],
           "effects": [],
