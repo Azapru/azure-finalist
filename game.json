@@ -8,6 +8,8 @@
   },
   "properties": {
     "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
     "folderProject": false,
     "orientation": "landscape",
     "packageName": "com.azapru.azurefinalist",
@@ -569,6 +571,87 @@
         "name": "Frame2",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frame3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Frame3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frame4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Frame4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frame5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Frame5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frame6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Frame6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/FrameBack.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "FrameBack",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frame7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Frame7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/LevelButton.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "LevelButton",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/LevelButton2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "LevelButton2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/LevelPackCover.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "LevelPackCover",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -578,15 +661,15 @@
   "variables": [
     {
       "folded": true,
-      "name": "Save",
-      "type": "array",
-      "children": []
+      "name": "levelData",
+      "type": "string",
+      "value": ""
     },
     {
       "folded": true,
-      "name": "pack",
+      "name": "currentPack",
       "type": "string",
-      "value": ""
+      "value": "https://notabug.org/shizukashiraga/azure-finalist-levels/raw/master/AnotherTest/"
     }
   ],
   "layouts": [
@@ -2244,6 +2327,7 @@
       ],
       "objects": [
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "LevelPacksMenuButton",
           "tags": "",
@@ -2305,6 +2389,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "BG2",
           "tags": "",
@@ -2377,6 +2462,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Logo",
           "tags": "",
@@ -2437,6 +2523,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Block",
           "tags": "",
@@ -2497,6 +2584,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "LaserChain",
           "tags": "",
@@ -2928,7 +3016,7 @@
         "gridColor": 5131854,
         "gridAlpha": 0.4,
         "snap": true,
-        "zoomFactor": 0.8993607583666636,
+        "zoomFactor": 0.6897782140104511,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2939,7 +3027,10 @@
               "name": "LevelPacksMenuButton"
             },
             {
-              "name": "LevelPack"
+              "name": "LevelPackTest1"
+            },
+            {
+              "name": "LevelPackCover"
             }
           ]
         },
@@ -2951,6 +3042,17 @@
             },
             {
               "name": "LaserChain"
+            }
+          ]
+        },
+        {
+          "name": "Packs",
+          "objects": [
+            {
+              "name": "LevelPackTest2"
+            },
+            {
+              "name": "LevelPackTest1"
             }
           ]
         }
@@ -4567,7 +4669,7 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "LevelPack",
+          "name": "LevelPackTest1",
           "persistentUuid": "d76a8345-ecd9-4498-8db8-3d342ed38835",
           "width": 0,
           "x": 32,
@@ -4576,10 +4678,26 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "LevelPackTest2",
+          "persistentUuid": "d9f13f14-b049-4819-be88-08ac38ad6e69",
+          "width": 0,
+          "x": 320,
+          "y": 32,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "LevelPacksMenuButton",
           "tags": "",
@@ -4641,6 +4759,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "BG2",
           "tags": "",
@@ -4713,6 +4832,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Logo",
           "tags": "",
@@ -4773,6 +4893,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Block",
           "tags": "",
@@ -4833,6 +4954,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "LaserChain",
           "tags": "",
@@ -4925,8 +5047,9 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
-          "name": "LevelPack",
+          "name": "LevelPackTest1",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -4935,7 +5058,7 @@
               "folded": true,
               "name": "pack",
               "type": "string",
-              "value": "https://azapru.github.io/azure-finalist/online/packs/test/"
+              "value": "https://notabug.org/shizukashiraga/azure-finalist-levels/raw/master/test/"
             }
           ],
           "effects": [],
@@ -4966,6 +5089,118 @@
                         "y": 0
                       },
                       "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "LevelPackTest2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "folded": true,
+              "name": "pack",
+              "type": "string",
+              "value": "https://notabug.org/shizukashiraga/azure-finalist-levels/raw/master/AnotherTest/"
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "LevelPack",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "LevelPack2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "LevelPackCover",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "LevelPackCover",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 1111,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LevelPackCover",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 256,
+                            "y": 0
+                          },
+                          {
+                            "x": 256,
+                            "y": 512
+                          },
+                          {
+                            "x": 0,
+                            "y": 512
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -5229,7 +5464,7 @@
                     "value": "SourisSurObjet"
                   },
                   "parameters": [
-                    "LevelPack",
+                    "Packs",
                     "",
                     "",
                     ""
@@ -5242,9 +5477,99 @@
                     "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
-                    "pack",
+                    "currentPack",
                     "=",
-                    "LevelPack.VariableString(pack)"
+                    "Packs.VariableString(pack)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Pack\"",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Packs",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "LevelPackCover",
+                        "Packs.X() + 8",
+                        "Packs.Y() + 8",
+                        "\"Covers\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.01"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LoadImageFromURL::LoadURLIntoSprite"
+                      },
+                      "parameters": [
+                        "",
+                        "Packs.VariableString(pack) + \"image.png\"",
+                        "LevelPackCover",
+                        "no",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Always"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetSize"
+                  },
+                  "parameters": [
+                    "LevelPackCover",
+                    "256-16",
+                    "512-16"
                   ]
                 }
               ]
@@ -5296,6 +5621,22 @@
             }
           ],
           "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Covers",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
         }
       ],
       "behaviorsSharedData": [
@@ -5325,7 +5666,7 @@
         "gridColor": 6184542,
         "gridAlpha": 0.4,
         "snap": true,
-        "zoomFactor": 1.0269425874981266,
+        "zoomFactor": 0.8416428125373266,
         "windowMask": false
       },
       "objectsGroups": [
@@ -5901,6 +6242,7 @@
       ],
       "objects": [
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Player",
           "tags": "",
@@ -6107,6 +6449,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "PlayerSpawn",
           "tags": "",
@@ -6149,6 +6492,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "PlayerSpawnSelect",
           "tags": "",
@@ -6198,6 +6542,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "PlayerDashEffect",
           "tags": "",
@@ -6348,6 +6693,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Block",
           "tags": "",
@@ -6397,6 +6743,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "BlockSelect",
           "tags": "",
@@ -6557,6 +6904,7 @@
           "behaviors": []
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "ZoomInButton",
           "tags": "",
@@ -6614,6 +6962,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "SaveButton",
           "tags": "",
@@ -6671,6 +7020,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "LoadButton",
           "tags": "",
@@ -6728,6 +7078,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "ExitPreviewButton",
           "tags": "",
@@ -6785,6 +7136,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "ZoomOutButton",
           "tags": "",
@@ -6842,6 +7194,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Selector",
           "tags": "",
@@ -6884,6 +7237,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "OffGridButton",
           "tags": "",
@@ -6974,6 +7328,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "PlacingMode",
           "tags": "",
@@ -7027,6 +7382,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "RemoveMode",
           "tags": "",
@@ -7080,6 +7436,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "MoveMode",
           "tags": "",
@@ -7133,6 +7490,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "ObjectSelectorButton",
           "tags": "",
@@ -7186,6 +7544,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "RotateRightButton",
           "tags": "",
@@ -7239,6 +7598,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "RotateLeftButton",
           "tags": "",
@@ -7292,6 +7652,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "PreviewButton",
           "tags": "",
@@ -7345,6 +7706,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "CloseButton",
           "tags": "",
@@ -7530,6 +7892,7 @@
           }
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "NoTouchArea",
           "tags": "",
@@ -7572,6 +7935,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "LaserChain",
           "tags": "",
@@ -7665,6 +8029,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "LaserChainSelect",
           "tags": "",
@@ -7765,6 +8130,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Spikey",
           "tags": "",
@@ -7858,6 +8224,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "SpikeySelect",
           "tags": "",
@@ -7986,6 +8353,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Dim",
           "tags": "",
@@ -8039,6 +8407,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "ObjectSelectorPanel",
           "tags": "",
@@ -8091,6 +8460,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "RotationView",
           "tags": "",
@@ -8148,6 +8518,7 @@
           ]
         },
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "KeyIndicatorE",
           "tags": "",
@@ -11376,7 +11747,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Saving",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -11479,7 +11849,7 @@
                           "parameters": [
                             "LvlDataDebug",
                             "=",
-                            "ToJSON(Save)"
+                            "\"AZURE FINALIST - Azapru's Editor Test Build - pls don't leak if possible thank you\n\n1 - Move mode\n2 - Place mode\n3 - Remove mode\n\nE - Open item selection\n\nA - Change angle -45\nD - Change angle +45\n\nLMouse - Move/Place/Remove\nRMouse - Remove (while in any mode)\nMiddleMouse - Move (while in any mode)\nScrollMouse - Change zoom\n\n\"+ToJSON(Save)"
                           ]
                         },
                         {
@@ -11504,11 +11874,236 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Loading",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "DepartScene"
+                      },
+                      "parameters": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "JSONToVariableStructure"
+                      },
+                      "parameters": [
+                        "GlobalVariableString(levelData)",
+                        "Save"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "LvlDataDebug",
+                        "=",
+                        "\"AZURE FINALIST - Azapru's Editor Test Build - pls don't leak if possible thank you\n\n1 - Move mode\n2 - Place mode\n3 - Remove mode\n\nE - Open item selection\n\nA - Change angle -45\nD - Change angle +45\n\nLMouse - Move/Place/Remove\nRMouse - Remove (while in any mode)\nMiddleMouse - Move (while in any mode)\nScrollMouse - Change zoom\n\n\"+ToJSON(Save)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "QueueStep",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AjoutObjConcern"
+                      },
+                      "parameters": [
+                        "GameObjects",
+                        "GameObjects"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "GameObjects",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::ForEachChildVariable",
+                      "iterableVariableName": "Save",
+                      "valueIteratorVariableName": "child",
+                      "keyIteratorVariableName": "",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "QueueStep",
+                            "+",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "QueueStep",
+                                "=",
+                                "1"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarSceneTxt"
+                              },
+                              "parameters": [
+                                "queuedName",
+                                "=",
+                                "VariableString(child)"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "QueueStep",
+                                "=",
+                                "2"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarScene"
+                              },
+                              "parameters": [
+                                "queuedX",
+                                "=",
+                                "Variable(child)"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "QueueStep",
+                                "=",
+                                "3"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarScene"
+                              },
+                              "parameters": [
+                                "queuedY",
+                                "=",
+                                "Variable(child)"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "QueueStep",
+                                "=",
+                                "4"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarScene"
+                              },
+                              "parameters": [
+                                "queuedAngle",
+                                "=",
+                                "Variable(child)"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarScene"
+                              },
+                              "parameters": [
+                                "QueueStep",
+                                "=",
+                                "0"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "CreateByName"
+                              },
+                              "parameters": [
+                                "",
+                                "GameObjects",
+                                "VariableString(queuedName)",
+                                "Variable(queuedX)",
+                                "Variable(queuedY)",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetAngle"
+                              },
+                              "parameters": [
+                                "GameObjects",
+                                "=",
+                                "Variable(queuedAngle)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -11560,7 +12155,7 @@
                       "parameters": [
                         "LvlDataDebug",
                         "=",
-                        "VariableString(Clipboard)"
+                        "\"AZURE FINALIST - Azapru's Editor Test Build - pls don't leak if possible thank you\n\n1 - Move mode\n2 - Place mode\n3 - Remove mode\n\nE - Open item selection\n\nA - Change angle -45\nD - Change angle +45\n\nLMouse - Move/Place/Remove\nRMouse - Remove (while in any mode)\nMiddleMouse - Move (while in any mode)\nScrollMouse - Change zoom\n\n\"+VariableString(Clipboard)"
                       ]
                     },
                     {
@@ -12771,23 +13366,68 @@
         "gridColor": 9145227,
         "gridAlpha": 0.2,
         "snap": true,
-        "zoomFactor": 0.7619362677197598,
+        "zoomFactor": 0.9296874999999996,
         "windowMask": false
       },
-      "objectsGroups": [],
-      "variables": [],
+      "objectsGroups": [
+        {
+          "name": "Buttons",
+          "objects": [
+            {
+              "name": "LevelButton"
+            }
+          ]
+        }
+      ],
+      "variables": [
+        {
+          "folded": true,
+          "name": "GET",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "folded": true,
+          "name": "GET_ERROR",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "folded": true,
+          "name": "createButtonsProgress",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "instances": [
         {
           "angle": 0,
           "customSize": true,
-          "height": 608,
-          "layer": "",
+          "depth": 0,
+          "height": 811,
+          "layer": "Frame",
           "name": "Frame",
           "persistentUuid": "0687bdb9-88c3-4634-ae1f-cf3d0cd92af9",
           "width": 811,
-          "x": 245,
-          "y": 64,
+          "x": 224,
+          "y": 0,
           "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 720,
+          "layer": "ScrollBack",
+          "name": "FrameBack",
+          "persistentUuid": "dacdba70-c682-49d3-bbe3-6c7d4a6f083c",
+          "width": 811,
+          "x": 224,
+          "y": 0,
+          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -12795,6 +13435,7 @@
       ],
       "objects": [
         {
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Frame",
           "tags": "",
@@ -12815,7 +13456,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Frame2",
+                      "image": "Frame7",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -12835,10 +13476,539 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "FrameBack",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "FrameBack",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "FrameBack",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "LevelButton",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "LevelButton",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LevelButton2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 24,
+                            "y": 0
+                          },
+                          {
+                            "x": 24,
+                            "y": 24
+                          },
+                          {
+                            "x": 0,
+                            "y": 24
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "LevelButton",
+                "toFrameX",
+                "=",
+                "LevelButton.X()-Frame.X()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "LevelButton",
+                "toFrameY",
+                "=",
+                "LevelButton.Y()-Frame.Y()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Always"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetCenter"
+              },
+              "parameters": [
+                "Frame",
+                "=",
+                "SceneWindowWidth()/2",
+                "=",
+                "SceneWindowHeight()/2"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenter"
+              },
+              "parameters": [
+                "FrameBack",
+                "=",
+                "SceneWindowWidth()/2",
+                "=",
+                "SceneWindowHeight()/2"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenter"
+              },
+              "parameters": [
+                "LevelButton",
+                "=",
+                "Frame.X()+LevelButton.Variable(toFrameX)+LevelButton.Width()/2",
+                "=",
+                "Frame.Y()+LevelButton.Variable(toFrameY)+LevelButton.Height()/2"
+              ]
+            }
+          ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Buttons",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Buttons",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "Buttons",
+                    "=",
+                    "155"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "Buttons",
+                    "=",
+                    "255"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Buttons",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "Buttons",
+                    "=",
+                    "255"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Levels",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "await": true,
+                    "value": "SendAsyncRequest"
+                  },
+                  "parameters": [
+                    "GlobalVariableString(currentPack)+\"levels.txt\"",
+                    "\"\"",
+                    "\"GET\"",
+                    "\"application/x-www-form-urlencoded\"",
+                    "GET",
+                    "GET_ERROR"
+                  ]
+                }
+              ]
+            },
+            {
+              "infiniteLoopWarning": true,
+              "type": "BuiltinCommonInstructions::While",
+              "whileConditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "createButtonsProgress",
+                    "<",
+                    "Variable(GET)"
+                  ]
+                }
+              ],
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "LevelButton",
+                    "(Frame.X()+32)+(128*Variable(createButtonsProgress)+1)",
+                    "Frame.Y()+136",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSize"
+                  },
+                  "parameters": [
+                    "LevelButton",
+                    "96",
+                    "96"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "LevelButton",
+                    "toFrameX",
+                    "=",
+                    "LevelButton.X()-Frame.X()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "LevelButton",
+                    "toFrameY",
+                    "=",
+                    "LevelButton.Y()-Frame.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "LevelButton",
+                    "level",
+                    "=",
+                    "Variable(createButtonsProgress)+1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "createButtonsProgress",
+                    "+",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "LevelButton",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "await": true,
+                    "value": "SendAsyncRequest"
+                  },
+                  "parameters": [
+                    "GlobalVariableString(currentPack)+ToString(LevelButton.Variable(level))+\".json\"",
+                    "\"\"",
+                    "\"GET\"",
+                    "\"application/x-www-form-urlencoded\"",
+                    "GET_LEVEL_DATA",
+                    "GET_LEVEL_DATA_ERROR"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "levelData",
+                    "=",
+                    "VariableString(GET_LEVEL_DATA)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Game\"",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        }
+      ],
       "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "ScrollBack",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Frame",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
         {
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
@@ -12872,6 +14042,131 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "author": "",
+      "category": "General",
+      "extensionNamespace": "",
+      "fullName": "Load images from a URL",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWZpbGUtZG93bmxvYWQiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTQsMkg2QzQuODksMiA0LDIuODkgNCw0VjIwQzQsMjEuMTEgNC44OSwyMiA2LDIySDE4QzE5LjExLDIyIDIwLDIxLjExIDIwLDIwVjhMMTQsMk0xMiwxOUw4LDE1SDEwLjVWMTJIMTMuNVYxNUgxNkwxMiwxOU0xMyw5VjMuNUwxOC41LDlIMTNaIiAvPjwvc3ZnPg==",
+      "name": "LoadImageFromURL",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/file-download.svg",
+      "shortDescription": "Adds multiple actions to load images from a URL into the game.",
+      "version": "1.0.0",
+      "description": [
+        "With this extension, you can load images from any URL (including a DataURL) into a sprite or image resource.",
+        "Loading it into a sprite will load the URL into a sprite, replacing the image it displays until the sprite's displayed image is changed, e.g. by going to the next frame of an animation or switching animations.",
+        "Loading it into a resource will discard the old image that a resource was using and replace it with the image loaded from a URL. Any sprite that is displaying this resource as a part of their animation will start showing the new image instead of the  old one. The old image of the resource will not be accessible anymore unless you restart the game or reload the original image from a URL into it."
+      ],
+      "origin": {
+        "identifier": "LoadImageFromURL",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "resource",
+        "art",
+        "image",
+        "url",
+        "base64",
+        "data",
+        "url",
+        "load",
+        "json",
+        "file",
+        "download",
+        "get",
+        "request"
+      ],
+      "authorIds": [
+        "ZgrsWuRTAkXgeuPV9bo0zuEcA2w1"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [
+        {
+          "description": "Replaces the image contained by a sprite by a new one, from a URL. This will only affect the sprite in question and only until the image in it is changed through its animation or another action, unless you also modify the resource.",
+          "fullName": "Load URL into a sprite",
+          "functionType": "Action",
+          "name": "LoadURLIntoSprite",
+          "sentence": "Load URL _PARAM1_ into sprite _PARAM2_ (and into the corresponding resource: _PARAM3_)",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "if (eventsFunctionContext.getArgument(\"ChangeResource\")) {",
+                "    const texture = PIXI.BaseTexture.from(eventsFunctionContext.getArgument(\"URL\"));",
+                "    for (const obj of objects) obj.getRendererObject().texture.baseTexture = texture;",
+                "} else {",
+                "    const texture = PIXI.Texture.from(eventsFunctionContext.getArgument(\"URL\"));",
+                "    for (const obj of objects) obj.getRendererObject().texture = texture;",
+                "}",
+                ""
+              ],
+              "parameterObjects": "Object",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ],
+          "parameters": [
+            {
+              "description": "The URL to load the new image for the sprite from",
+              "name": "URL",
+              "type": "string"
+            },
+            {
+              "description": "The object to modify",
+              "name": "Object",
+              "supplementaryInformation": "Sprite",
+              "type": "objectList"
+            },
+            {
+              "description": "Modify the resource?",
+              "longDescription": "If yes, modifies the image contained in the resource of the sprite's current frame instead of just the sprite's displayed image. This makes the changes affect all other sprites that also display this resource, and allows the change to persist after changing animations or the current frame.",
+              "name": "ChangeResource",
+              "type": "yesorno"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Replaces the image contained by a resource by a new one, from a URL. This will update all sprites displaying the resource.",
+          "fullName": "Load URL into an image resource",
+          "functionType": "Action",
+          "name": "LoadURLIntoImageResource",
+          "sentence": "Load URL _PARAM1_ into resource _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "runtimeScene",
+                "    .getGame()",
+                "    .getImageManager()",
+                "    .getPIXITexture(eventsFunctionContext.getArgument(\"Resource\"))",
+                "    .baseTexture = PIXI.BaseTexture.from(eventsFunctionContext.getArgument(\"URL\"));",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ],
+          "parameters": [
+            {
+              "description": "The URL to load the new image for the resource from",
+              "name": "URL",
+              "type": "string"
+            },
+            {
+              "description": "The resource to modify",
+              "name": "Resource",
+              "type": "imageResource"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "eventsBasedBehaviors": [],
+      "eventsBasedObjects": []
+    },
     {
       "author": "@Bouh, @arthuro555",
       "category": "User interface",
