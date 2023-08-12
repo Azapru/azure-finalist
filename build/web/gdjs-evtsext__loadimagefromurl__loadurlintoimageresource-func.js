@@ -1,39 +1,35 @@
 
-if (typeof gdjs.evtsExt__Clipboard__ReadText !== "undefined") {
-  gdjs.evtsExt__Clipboard__ReadText.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource !== "undefined") {
+  gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__Clipboard__ReadText = {};
+gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource = {};
 
 
-gdjs.evtsExt__Clipboard__ReadText.userFunc0x8e9280 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.userFunc0x8f0868 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
-const electron = runtimeScene.getGame().getRenderer().getElectron();
-if (electron && electron.clipboard) eventsFunctionContext.returnValue = electron.clipboard.readText();
+runtimeScene
+    .getGame()
+    .getImageManager()
+    .getPIXITexture(eventsFunctionContext.getArgument("Resource"))
+    .baseTexture = PIXI.BaseTexture.from(eventsFunctionContext.getArgument("URL"));
 
 };
-gdjs.evtsExt__Clipboard__ReadText.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-
-}
-
-
-{
-
-
-gdjs.evtsExt__Clipboard__ReadText.userFunc0x8e9280(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.userFunc0x8f0868(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
 
 };
 
-gdjs.evtsExt__Clipboard__ReadText.func = function(runtimeScene, parentEventsFunctionContext) {
+gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.func = function(runtimeScene, URL, Resource, parentEventsFunctionContext) {
 var eventsFunctionContext = {
   _objectsMap: {
 },
@@ -78,15 +74,17 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
+if (argName === "URL") return URL;
+if (argName === "Resource") return Resource;
     return "";
   },
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
 
-gdjs.evtsExt__Clipboard__ReadText.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.eventsList0(runtimeScene, eventsFunctionContext);
 
-return "" + eventsFunctionContext.returnValue;
+return;
 }
 
-gdjs.evtsExt__Clipboard__ReadText.registeredGdjsCallbacks = [];
+gdjs.evtsExt__LoadImageFromURL__LoadURLIntoImageResource.registeredGdjsCallbacks = [];
